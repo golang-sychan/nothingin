@@ -1,0 +1,20 @@
+apiVersion: operator.alauda.io/v1alpha1
+kind: ResourcePatch
+metadata:
+  labels:
+    target: 401e26eebb0abb342bdcbe3fe172f59c
+    name: rp-{{ .Values.global.plugin.name }}
+spec:
+  jsonPatch:
+    - op: replace
+      path: /spec/template/spec/initContainers/0/image
+      value: {{ .Values.global.registry.address }}{{ .Values.global.pipeline_template.repository }}:{{ .Values.global.pipeline_template.tag }}
+    - op: replace
+      path: /spec/template/spec/containers/0/image
+      value: {{ .Values.global.registry.address }}{{ .Values.global.devops_apiserver.repository }}:{{ .Values.global.devops_apiserver.tag }}
+  release: cpaas-system/alauda-devops
+  target:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: devops-controller
+    namespace: cpaas-system
