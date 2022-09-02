@@ -10,5 +10,6 @@ func demo() {
 
 //add sth
 func Run() error {
+  	fmt.Printf("App run ...\n")
 	return nil
 }
