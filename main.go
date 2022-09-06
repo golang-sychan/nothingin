@@ -21,6 +21,7 @@ func wrap_err() []error {
 
 type data struct {
 
+  Name string 
   Data []byte
 
 }
