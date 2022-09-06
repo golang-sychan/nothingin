@@ -19,3 +19,7 @@ func wrap_err() []error {
   return nil
 }
 
+type data struct {
+
+
+}
