@@ -13,3 +13,7 @@ func Run() error {
   	fmt.Printf("App run ...\n")
 	return nil
 }
+
+func wrap_err() []error {
+  return nil
+}
