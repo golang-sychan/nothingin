@@ -18,3 +18,7 @@ func Run() error {
 func wrap_err() []error {
   return nil
 }
+
+func hello() {
+  println("hello world`")
+}
