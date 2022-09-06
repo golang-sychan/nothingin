@@ -2,6 +2,7 @@ package main
 
 func main() {
 	println("hello joey!")
+    addsth1
 }
 
 func demo() {
@@ -23,5 +24,5 @@ type data struct {
 
   Name string 
   Data []byte
-
+  Addr string `json:"addr"`
 }
