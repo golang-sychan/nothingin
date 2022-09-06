@@ -14,6 +14,7 @@ func Run() error {
 	return nil
 }
 
+// wrap error for common
 func wrap_err() []error {
   return nil
 }
