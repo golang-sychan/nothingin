@@ -2,7 +2,6 @@ package main
 
 func main() {
 	println("hello joey!")
-    addsth1
 }
 
 func demo() {
