@@ -2,6 +2,7 @@ package main
 
 /*
  add 1
+ add  2
 */
 
 func main() {
