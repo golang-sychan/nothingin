@@ -8,7 +8,6 @@ func demo() {
 	fmt.Println("demo")
 }
 
-//add st 1111h
 func Run() error {
   	fmt.Printf("App run ...\n")
 	return nil
