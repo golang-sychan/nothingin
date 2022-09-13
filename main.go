@@ -2,6 +2,7 @@ package main
 
 /*
  add 8
+ add 10
  add 9
  add 7
  add 1
