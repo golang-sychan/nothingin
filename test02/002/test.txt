@@ -1,5 +1,0 @@
-$(info "test:pkgname:$(pkgname)")
-$(info "$(dir $(lastword $(MAKEFILE_LIST)))")
-COMMON_SELF_DIR := $(dir $(lastword $(MAKEFILE_LIST)))
-#$(info "$(abspath $(shell cd $(COMMON_SELF_DIR)/../.. && pwd -P ))")
-$(info "$(abspath $(shell pwd -P ))")

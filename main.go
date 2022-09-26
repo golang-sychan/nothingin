@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"time"
+)
+
 /*
  add 8
 add 20
@@ -23,7 +28,11 @@ oadd 12
 */
 
 func main() {
-	println("hello joey!")
+	for {
+		fmt.Printf("time:+%v\n", time.Now().Format(time.RFC822))
+		time.Sleep(5 * time.Second)
+	}
+
 }
 
 func demo() {
@@ -31,18 +40,17 @@ func demo() {
 }
 
 func Run() error {
-  	fmt.Printf("App run ...\n")
+	fmt.Printf("App run ...\n")
 	return nil
 }
 
 // wrap error for common
 func wrap_err() []error {
-  return nil
+	return nil
 }
 
 type data struct {
-
-  Name string 
-  Data []byte
-  Addr string `json:"addr"`
+	Name string
+	Data []byte
+	Addr string `json:"addr"`
 }
