@@ -1,4 +1,4 @@
-FROM golang:1.15-alpine
+FROM 192.168.137.200:60080/devops/golang:1.15-alpine
 
 COPY ./app /opt/app
 
